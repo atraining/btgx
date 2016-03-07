@@ -115,6 +115,14 @@ img:hover {
 	border-color: transparent;
 	color: #fff;
 }
+/* Map section */
+
+#map {
+   	width: 80%;
+    height: 400px;
+    background-color: #CCC
+}
+
 /* service section */
 #service {
 	padding-top: 100px;

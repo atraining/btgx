@@ -284,6 +284,31 @@ http://www.templatemo.com/free-website-templates/
     <div class="col-md-1 col-sm-1"></div>
   </div>
 </div>
+
+<!--map section -->
+
+<div id="map"></div>
+<script>
+  function initMap() {
+    var mapDiv = document.getElementById('map');
+    var map = new google.maps.Map(mapDiv, {
+      center: {lat: 48.3351095, lng: 10.8971651},
+      zoom: 15
+    });
+  }
+</script>
+
+<!-- divider section -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-1 col-sm-1"></div>
+    <div class="col-md-10 col-sm-10">
+      <hr>
+    </div>
+    <div class="col-md-1 col-sm-1"></div>
+  </div>
+</div>
+
 <!-- footer section -->
 <footer>
   <div class="container">
@@ -336,5 +361,7 @@ http://www.templatemo.com/free-website-templates/
 <script src="js/isotope.js"></script> 
 <script src="js/imagesloaded.min.js"></script> 
 <script src="js/custom.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+        async defer></script>
 </body>
 </html>
