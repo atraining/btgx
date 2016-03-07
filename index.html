@@ -301,11 +301,18 @@ http://www.templatemo.com/free-website-templates/
 
 <script>
   function initMap() {
+    var myLatLng = {lat: 48.333631, lng: 10.894876};
+
     var mapDiv = document.getElementById('map');
     var map = new google.maps.Map(mapDiv, {
-      center: {lat: 48.3351095, lng: 10.8971651},
+      center: myLatLng,
       zoom: 15
     });
+    var marker = new google.maps.Marker({
+    position: myLatLng,
+    map: map,
+    title: 'FIM'
+  });
   }
 </script>
 
